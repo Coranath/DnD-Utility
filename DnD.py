@@ -4,6 +4,7 @@ import sqlite3
 from random import randint
 from time import sleep
 import pickle
+import flask
 import logging
 # import pygame
 
@@ -74,7 +75,6 @@ def dots():
     print('.', end='', flush=True)
     sleep(1)
 
-
 def addMonster():
 
     os.system('cls')
@@ -108,7 +108,6 @@ def addMonster():
     con.commit() # You must commit after inserting for some reason. This is a function of con, not db.
 
     # con.close()
-
 
 def addPlayer():
 
