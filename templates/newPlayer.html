@@ -1,0 +1,35 @@
+{% extends "template.html" %}
+
+{% block content %}
+
+    <form method="POST" style="align-self: center;" action="/addPlayer">
+        <table class="text-white" style="column-gap: 5px; align-self: center;">
+            <tr>
+                <td><label for="name">Character name:</label></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="ac">Character armor class:</label></td>
+                <td><input type="text" id="ac" name="ac"></td>
+            </tr>
+            <tr>
+                <td><label for="hp">Character hit points:</label></td>
+                <td><input type="text" id="hp" name="hp"></td>
+            </tr>
+            <tr>
+                <td></td><td><button type="submit" formmethod='post'>Create character</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- <form method="POST" action="/addPlayer">
+        <label for="name">Character name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="ac">Character armor class:</label>
+        <input type="text" id="ac" name="ac"><br>
+        <label for="hp">Character hit points:&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" id="hp" name="hp"><br>
+        <button type="submit" formmethod='post'>Create character</button>
+    </form> -->
+
+{%endblock%}
